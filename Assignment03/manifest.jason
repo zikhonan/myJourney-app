@@ -1,0 +1,21 @@
+{
+  "short_name": "myJourney",
+  "name": "myJourney",
+  "icons": [
+    {
+      "src": "/images/icons-transport1.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/images/icons-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "https://myjourney-app-tvjqsuvumb.now.sh",
+  "background_color": "#3367D6",
+  "display": "standalone",
+  "scope": "/myJourney/",
+  "theme_color": "#3367D6"
+}
