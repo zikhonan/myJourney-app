@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css" >
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+  <body>
+    <section class="section">
+      <div class="title has-text-centered">Guessing Game</div>
+    </section>
+    <section class="section" id="app">
+      <div class="container has-text-centered is-size-1">{{ timer }}</div>
+      <div class="container">
+        <form class="form" v-on:submit.prevent>
+          <div class="field">
+            <label class="label">Number Guess</label>
+            <div id="guess">                    
+              <input class="input"
+               v-model="guess">
+          </div>
+          </div>
+          <div class="field">
+            <button class="button is-primary" 
+                     v-on:click="enter">Submit</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="container has-text-centered is-size-1">
+        <span v-for="error in errors" :key="index" style="padding: 10px"><u>X</u></span>
+      </div>
+      <div class="modal" v-bind:class="{'is-active': showModal}">
+        <div class="modal-background">          
+        </div>
+        <div class="modal-content">
+          <div class="box" style="background-color:white">
+         <div>
+           <span v-if="failure">You Failed!</span>
+           <span v-if="success">You Guessed it correctly</span>
+         </div>
+         <div>
+            {{ customMessage }}
+          </div>
+          <button class="button is-primary" >OK</button>
+         </div>              
+        </div>
+     
+        <button class="modal-close is-large" aria-label="close"></button>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

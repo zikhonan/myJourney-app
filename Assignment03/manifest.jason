@@ -1,21 +1,22 @@
 {
   "short_name": "myJourney",
-  "name": "myJourney",
+  "name": "myJourney-app",
   "icons": [
     {
-      "src": "/images/icons-transport1.png",
+      "src": "/images/ transport1-1@192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/images/icons-512.png",
+      "src": "/images/ transport1-1@512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
   ],
-  "start_url": "https://myjourney-app-tvjqsuvumb.now.sh",
+  "start_url": "/myJourney-app/Assignment03/index.html",
   "background_color": "#3367D6",
   "display": "standalone",
   "scope": "/myJourney/",
   "theme_color": "#3367D6"
 }
+`
