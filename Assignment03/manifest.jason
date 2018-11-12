@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "short_name": "myJay",
   "name": "myJourney-app",
   "icons": [
@@ -28,3 +29,26 @@
     
   
   
+=======
+  "short_name": "myJourney",
+  "name": "myJourney-app",
+  "icons": [
+    {
+      "src": "/images/ transport1-1@192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/images/ transport1-1@512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/myJourney-app/Assignment03/index.html",
+  "background_color": "#3367D6",
+  "display": "standalone",
+  "scope": "/myJourney/",
+  "theme_color": "#3367D6"
+}
+`
+>>>>>>> 4396b3912e290a3285d426828bf4df6d46aa2867

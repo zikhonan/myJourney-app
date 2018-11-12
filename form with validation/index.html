@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="bulma.css">           
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+        <div class="section" id="app">
+            <form class="form" v-on:submit.prevent>
+                <div class="field">
+                    <label class="label">Username</label>
+                    <input class="input" type="text" id="username" v-model="username" v-bind:class="{'is-danger':usernameError}" />
+                    <div class="has-text-danger" v-if="usernameError == true">
+                        You username needs to be longer than 3 characters 
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label">Password</label>
+                    <input class="input" type="password" id="password" v-model="password" v-bind:class="{'is-danger':passwordError}"/>
+                    <div class="has-text-danger" v-if="passwordError == true"> Your password is less than 6 characters</div>
+                </div>
+
+                <div class="field">
+                    <button v-on:click="enter" class="button is-primary" type="submit">Login</button>
+                </div>
+            </form>
+            <div>
+                Don'nt have an account?  
+                <a href="">Register</a>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
