@@ -11,9 +11,16 @@
                 <div class="field">
                     <label class="label">Username</label>
                     <input class="input" type="text" id="username" v-model="username" v-bind:class="{'is-danger':usernameError}" />
+                    <ul >
+                         <li v-for="error in usernameErrorMessage">({error.msg}
+                             <span>({error.date}.toString()</span>
+                         </li>
+                    </ul>
                     <div class="has-text-danger" v-if="usernameError == true">
                         You username needs to be longer than 3 characters 
-                    </div>
+                </div>
+                    
+
                 </div>
 
                 <div class="field">
@@ -25,7 +32,7 @@
                 <div class="field">
                     <button v-on:click="enter" class="button is-primary" type="submit">Login</button>
                 </div>
-            </form>
+            </form>                                                                                                                                                                                                                                         
             <div>
                 Don'nt have an account?  
                 <a href="">Register</a>
