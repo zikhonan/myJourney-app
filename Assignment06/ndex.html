@@ -1,0 +1,56 @@
+
+<html>
+<head>
+    <link rel="stylesheet" href="bulma.css">
+    <link rel="stylesheet" href="app.css">
+    <link rel="manifest" href="manifest.json">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.51.0/mapbox-gl.css' rel='stylesheet' />
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.51.0/mapbox-gl.js'></script>
+
+</head>
+<body>
+    <section class="section">    
+            <div id='map' style='width: 400px; height: 300px;'></div>        
+        
+            <div id="app" class="container"> 
+                <form action="map.html" v-on:submit.prevent> <!-- v-on:submit.prevent -->
+                    <div class="field">
+                        <div class="control has-icons-left">
+                             <input id="start" type="text"
+                                class="input is-rounded"
+                                 placeholder="start"
+                                v-model="start">
+
+                
+
+            <div class="field">
+                <div class="control has-icons-left">
+                    <input id="destination" type="password"
+                           class="input is-rounded"
+                           placeholder="destination"
+                           v-model="destination">
+
+                    <span class="icon is-small is-left">
+                    <i class="fas fa-lock"></i></span>
+                </div>
+
+            </div>
+            
+
+            </div>        
+            </div>
+        </form>
+        
+    </div>
+
+    <div id="home-view">
+        <h4></h4>
+     </div>
+    </section>
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="map.js"></script>
+
+</body>
+</html>
