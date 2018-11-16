@@ -45,7 +45,7 @@
               <input placeholder="start" v-model="startAddress" v-on:keyup="autocomplete(true)">
             </div>
             <div>
-              <input placeholder="end" v-model="destinationAddress" v-on:keyup="sutocomplete(false)">
+              <input placeholder="end" v-model="destinationAddress" v-on:keyup="autocomplete(false)">
             </div>
             <button @click="autocomplete">Search</button>
           </form>
